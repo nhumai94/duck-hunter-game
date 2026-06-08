@@ -106,7 +106,7 @@ function getDuckSize(r){return Math.max(22,30-r*0.5)}
 function getFleeTime(r){return Math.max(3500,7500-r*350)}
 function getSpawnInterval(r){return Math.max(30,80-r*4)}
 function getRequiredHitRate(r){return Math.min(0.8,0.5+r*0.02)}
-function isBossRound(r){return r>=3&&r%3===0}
+function isBossRound(r){return r>=5&&r%5===0}
 function getDuckPattern(r,id){
   if(r<=3)return'normal';
   const p=['normal','normal','zigzag','dive'];
